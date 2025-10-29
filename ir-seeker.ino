@@ -3,6 +3,8 @@ int u = A0;
 int r = A1;
 int d = A2;
 int l = A3;
+int xPin = 9;
+int yPin = 10;
 int xPos = 90;
 int yPos = 90;
 Servo xServo;
@@ -16,8 +18,8 @@ double lf = 0, rf = 0, uf = 0, df = 0;
 
 
 void setup() {
-  xServo.attach(9);
-  yServo.attach(10);
+  xServo.attach(xPin);
+  yServo.attach(yPin);
   xServo.write(90);
   yServo.write(90);
 }
