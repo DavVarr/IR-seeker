@@ -25,7 +25,9 @@ La board è alimentata direttamente dal connettore USB, collegato a un laptop.
 ![alt text](<electric schema.png>)
 
 ## Risultati
-<video controls src="ir-seeker.mp4" title="Title"></video>
+
+https://github.com/user-attachments/assets/d2c186e9-7a35-4e26-9c8a-cc57160b2427
+
 
 ## Difficoltà riscontrate
 ### Sistema di controllo
