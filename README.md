@@ -34,7 +34,7 @@ https://github.com/user-attachments/assets/d2c186e9-7a35-4e26-9c8a-cc57160b2427
 Il primo approccio per comandare il segnale da inviare ai motori è stato quello di usare due controllori PID (uno per motore).
 Sottraendo i valori ottenuti dai sensori sinistra e destra si ottiene un errore sull'asse orizzontale, analogamente per gli altri due sensori, si ottiene
 un errore sull'asse verticale.
-Quando la fiamma è centrata, le coppie di sensori dovrebbero vedere la stessa intensità di luce(adc 10 bit, valori da 0 a 1024), e quindi dare un errore 0 o vicino a 0.
+Quando la fiamma è centrata, le coppie di sensori dovrebbero vedere la stessa intensità di luce(adc 10 bit, valori da 0 a 1023), e quindi dare un errore 0 o vicino a 0.
 Per evitare bias dovuti ai valori assoluti, che cambiano in base alla distanza della fiamma, i 2 errori vengono normalizzati,
 dividendo per la somma delle rispettive rilevazioni (per l'asse orizzontale l'errore è = (destra-sinistra)/(destra+sinistra)).
 Dato il nuovo range di valori (da -1 a 1), alcuni accorgimenti sono stati necessari per evitare di pilotare i motori erroneamente:
